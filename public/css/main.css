@@ -1,0 +1,399 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: rgb(3, 2, 52);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(16, 16, 16);
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(1, 14, 6);
+    padding: 22px;
+    box-shadow: 0px 2px 6px 2px rgb(31, 30, 30);
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin-right: 63px;
+    margin-top: 6px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-inline: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(227, 225, 225);
+    font-size: 16px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(221, 36, 221);
+    border-bottom: 2px solid rgb(189, 232, 70);
+}
+
+nav ul li button {
+    width: 100px;
+    height: 33px;
+    background-color: rgb(180, 4, 154);
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+nav ul li button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: rgb(207, 22, 207);
+}
+
+.logo {
+    font-size: 25px;
+    margin-left: 33px;
+    color: rgb(192, 43, 135);
+}
+
+.logo span {
+    color: white;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.home img {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.home .homeText {
+    margin-left: 40px;
+}
+
+.homeText h1 {
+    font-size: 85px;
+    color: rgb(203, 42, 165);
+}
+
+.homeText h3 {
+    margin-top: 22px;
+    font-size: 22px;
+    color: #f5bbbf;
+}
+
+.homeText p {
+    margin-top: 22px;
+    color: silver;
+    line-height: 1.6;
+}
+
+.homeText button {
+    margin-top: 22px;
+    font-size: 22px;
+    width: 140px;
+    height: 40px;
+    background-color: rgb(128, 0, 94);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.homeText button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: rgb(252, 23, 206);
+}
+
+/* Section Headings */
+.head {
+    text-align: center;
+    padding: 95px 20px;
+    color: #f2efef;
+}
+
+.head span {
+    color: rgb(244, 37, 189);
+}
+
+/* Program Section */
+.ourProgram {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.ourProgram .crd {
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: #f0e9e9;
+}
+
+.ourProgram .crd:hover {
+    transform: scale(1.05);
+}
+
+.ourProgram .crd img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Plan Section */
+.ourPlan {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.ourPlan .card {
+    width: 300px;
+    height: 430px;
+    padding: 20px;
+    background-color: rgb(36, 35, 35);
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.ourPlan .card:hover {
+    transform: scale(1.05);
+    background-color: black;
+}
+
+.card i {
+    font-size: 22px;
+    margin-top: 22px;
+    color: rgb(244, 244, 12);
+}
+
+.card h3 {
+    margin-top: 22px;
+    color: rgb(249, 58, 201);
+}
+
+.card h1 {
+    margin-top: 22px;
+    color: rgb(255, 24, 193);
+}
+
+.card p {
+    margin-top: 12px;
+    color: rgb(192, 192, 192);
+}
+
+.card button {
+    margin-top: 22px;
+    width: 130px;
+    height: 38px;
+    background-color: rgb(209, 218, 239);
+    border: none;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.card button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: rgb(252, 35, 234);
+}
+
+/* Blog Section */
+.ourBlog {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.ourBlog .blogCard {
+    width: 300px;
+    background-color: rgb(42, 41, 41);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.ourBlog .blogCard:hover {
+    transform: scale(1.05);
+}
+
+.blogCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blogText {
+    padding: 15px;
+}
+
+.blogText h3 {
+    margin-top: 10px;
+    color: rgb(249, 33, 199);
+}
+
+.blogText p {
+    margin-top: 10px;
+    color: silver;
+    line-height: 1.6;
+}
+
+.blogText a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(244, 239, 243);
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.blogText a:hover {
+    background-color: rgb(252, 23, 187);
+}
+
+/* Trainer Section */
+.trainer .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.trainer .content .frame {
+    width: 300px;
+    background-color: rgb(36, 35, 35);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trainer .content .frame:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.trainer .content .frame img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trainer .content .headline {
+    padding: 15px;
+    text-align: center;
+}
+
+.trainer .content .headline .titel {
+    font-size: 20px;
+    color: rgb(249, 33, 242);
+    font-weight: bold;
+}
+
+.trainer .content .headline p {
+    color: silver;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contactPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.contactText {
+    margin-right: 20px;
+    color: rgb(249, 33, 173);
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.contactPage img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.contactInfoBox {
+    position: absolute;
+    left: 250px;
+    top: 15%;
+    transform: translateY(-50%);
+    width: 310px;
+    padding: 23px;
+    background-color: rgb(36, 35, 35);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.contactInfoBox h3 {
+    margin-bottom: 13px;
+    font-size: 19px;
+    color: rgb(249, 33, 220);
+}
+
+.contactInfoBox p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: silver;
+}
+
+.contactPage {
+    position: relative; 
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 20px;
+    background-color: #222;
+}
+
+.footer .footerText {
+    color: rgb(249, 33, 188);
+}
+
+.footerText p {
+    color: silver;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #151617;
+    color: white;
+    font-size: 14px;
+}
